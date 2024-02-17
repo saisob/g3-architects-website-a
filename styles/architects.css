@@ -1,5 +1,5 @@
 /* shared styles */
-.btn-primary{
+.btn-primary {
     background-color: #FF900E;
     border-radius: 8px;
     padding: 20px 25px;
@@ -9,82 +9,122 @@
     font-weight: 600;
     cursor: pointer;
     border: 0;
- }
+}
 
 
-/* Header styles */
-header{
+/* Header start*/
+
+header {
     background-color: rgb(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
-.nav-title{
+}
+
+.nav-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color:#131313 ;   
+    color: #131313;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
-  }
- nav li{
+}
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-size: 1rem;
     font-weight: 500;
- }
- nav li a{
+}
+
+nav li a {
     text-decoration: none;
     color: #424242;
 }
- /* baner styles */
- .baner-container{
+
+/* baner styles */
+.baner-container {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
- }
- .baner-title{
+}
+
+.baner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
- }
- .baner-discription{
+}
+
+.baner-discription {
     color: #727272;
- }
- .baner img{
+}
+
+.baner img {
     width: 100%;
     margin-top: 10px;
- }
+}
 
- /* responsive media queries */
- /* mobile sevices  */
- @media screen and (max-width:576px) {
-    heder{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav > ul{
-        flex-direction: column;
-    }
-    
- }
-
- /* table or medium devices */
- @media screen and (min-width:576px) and (max-width:960px){
-    nav{
-        flex-direction: column;
-    }
-    heder{
+/* responsive media queries */
+/* mobile sevices  */
+@media screen and (max-width:576px) {
+    heder {
         padding: 20px;
     }
 
+    nav {
+        flex-direction: column;
+    }
 
- }  
+    nav>ul {
+        flex-direction: column;
+    }
+}
+
+/* table or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    heder {
+        padding: 20px;
+    }
+}
+/* header end */
 
 
-
+/* main start*/
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* team section */
+ 
+.teams-container{
+    display: flex;
+    align-items: center;
+ }
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.teams-content-title .quick-list{
+    font-size: 2.8rem;
+    color: #727272;
+    font-weight: 500;
+}
+.teams-content-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+ 
